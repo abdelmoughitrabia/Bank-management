@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="dashboard">Offcanvas navbar</a>
+  <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [class.active]="navId==0">
+        <a class="nav-link" (click)="dashboard()" routerLink="dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item" [class.active]="navId==1">
+        <a class="nav-link" (click)="addProduct()" routerLink="usersManagement">Users Management</a>
+      </li>
+      <li class="nav-item" [class.active]="navId==2">
+        <a class="nav-link" (click)="productList()" routerLink="uccountsManagement">Accounts Management</a>
+      </li>
+      <li class="nav-item" [class.active]="navId==2">
+        <a class="nav-link" (click)="productList()" routerLink="transactionsManagement">Transactions Management</a>
+      </li>
+    </ul>
+  </div>
+</nav>
